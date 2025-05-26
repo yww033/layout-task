@@ -26,7 +26,7 @@
   <div class="row no-gutters justify-content-center">
     <div class="col-12 col-lg-10 overlay-container">
 
-      <!-- 輪播開始 -->
+
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="3000">
 
         <ol class="carousel-indicators">
@@ -60,15 +60,23 @@
           <span class="sr-only">下一張</span>
         </a>
       </div>
-      <!-- 輪播結束 -->
+
 
     </div>
   </div>
 </section>
 
-<!-- Bootstrap 4.6 JS（包含 jQuery & Popper） -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!-- Bootstrap 4.6 JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('#carouselExampleCaptions').carousel({
+      interval: 3000,
+      ride: 'carousel'
+    });
+  });
+</script>
 
 </body>
 </html>
