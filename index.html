@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,114 +11,121 @@
 
 
   <style type="text/css">
-    html, body {
-    overflow-x: hidden;
-    width: 100%;
-    max-width: 100vw;
-    margin: 0;
-    padding: 0;
-  }
+    html,
+    body {
+      overflow-x: hidden;
+      width: 100%;
+      max-width: 100vw;
+      margin: 0;
+      padding: 0;
+    }
 
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
 
-  .carousel-inner {
-    width: 100%;
-  }
-  .carousel-caption {
-  top: 20%;
-  transform: translateY(-20%);
-  bottom: auto;
-  text-align: center;
+    .carousel-inner {
+      width: 100%;
+    }
+    .carousel-inner img {
+  filter: grayscale(100%);
 }
 
-.carousel-caption h5 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
+    .carousel-caption {
+      top: 20%;
+      transform: translateY(-20%);
+      bottom: auto;
+      text-align: center;
+    }
 
-.carousel-caption p {
-  font-size: 1.5rem;
-}
-.carousel-indicators li {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #666;
-  margin: 5px;
-  border: none;
-}
+    .carousel-caption h5 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
 
-.carousel-indicators .active {
-  background-color: #fff;
-}
+    .carousel-caption p {
+      font-size: 1.5rem;
+    }
 
+    .carousel-indicators li {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #666;
+      margin: 5px;
+      border: none;
+    }
+
+    .carousel-indicators .active {
+      background-color: #fff;
+    }
   </style>
 </head>
+
 <body style="overflow-x: hidden;">
 
-<section class="container-fluid p-0">
-  <div class="row no-gutters justify-content-center">
-    <div class="col-12 col-lg-10 overlay-container px-0">
+  <section class="container-fluid p-0">
+    <div class="row no-gutters justify-content-center">
+      <div class="col-12 col-lg-10 overlay-container px-0">
 
 
-      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="3000">
 
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        </ol>
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          </ol>
 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/index/01.png" class="d-block w-100" alt="第一張">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>卓越品質歷久不衰</h5>
-              <p>讓經營成為享受</p>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/index/01.png" class="d-block w-100" alt="第一張">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>卓越品質歷久不衰</h5>
+                <p>讓經營成為享受</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/index/02.png" class="d-block w-100" alt="第二張">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>專業吊車進場</h5>
+                <p>高樓層不擔心</p>
+              </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="img/index/02.png" class="d-block w-100" alt="第二張">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>專業吊車進場</h5>
-              <p>高樓層不擔心</p>
-            </div>
-          </div>
+
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">上一張</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">下一張</span>
+          </a>
         </div>
 
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">上一張</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">下一張</span>
-        </a>
+
       </div>
-
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Bootstrap 4.6 JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function(){
-      $('#carouselExampleCaptions').carousel({
-        interval: 3000,
-        ride: 'carousel'
-      });
-    }, 100);
-  });
-</script>
+  <!-- Bootstrap 4.6 JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(function () {
+        $('#carouselExampleCaptions').carousel({
+          interval: 3000,
+          ride: 'carousel'
+        });
+      }, 100);
+    });
+  </script>
 
 
 </body>
+
 </html>
