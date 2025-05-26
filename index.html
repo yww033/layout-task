@@ -1,61 +1,54 @@
-﻿<?php
-require_once($_SERVER['DOCUMENT_ROOT'] . '/config/connection.php');
-require_once($_SERVER['DOCUMENT_ROOT'] . '/config/function.php');
-?>
-
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <?php include($_SERVER['DOCUMENT_ROOT'] . '/css/css.php') ?>
+  <title>酷码资讯</title>
+
+  <!-- Bootstrap 4.6 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
 
   <style type="text/css">
-    html,
-    body {
+    html, body {
       overflow-x: hidden;
       width: 100%;
       max-width: 100vw;
-      /* 防止橫向超出視窗 */
     }
     .carousel-item img {
-  height: 500px;
-  object-fit: cover;
-}
-
-
+      height: 500px;
+      object-fit: cover;
+    }
   </style>
 </head>
 <body style="overflow-x: hidden;">
-  <!-- <?php include('header.php'); ?> -->
-  <section class="container-fluid p-0">
+
+<section class="container-fluid p-0">
   <div class="row no-gutters justify-content-center">
     <div class="col-12 col-lg-10 overlay-container">
 
       <!-- 輪播開始 -->
-      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="3000">
+
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/index/01.png" class="d-block w-100" alt="...">
+            <img src="img/index/01.png" class="d-block w-100" alt="第一張">
             <div class="carousel-caption d-none d-md-block">
-              <h5>卓越品质历久不衰</h5>
-              <p>让经营成为享受</p>
+              <h5>卓越品質歷久不衰</h5>
+              <p>讓經營成為享受</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/index/02.png" class="d-block w-100" alt="...">
+            <img src="img/index/02.png" class="d-block w-100" alt="第二張">
             <div class="carousel-caption d-none d-md-block">
               <h5>專業吊車進場</h5>
               <p>高樓層不擔心</p>
             </div>
           </div>
-
         </div>
 
         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -73,15 +66,9 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/config/function.php');
   </div>
 </section>
 
-
-
-
-
-  <?php include($_SERVER['DOCUMENT_ROOT'] . '/js/js.php') ?>
-  <script type="text/javascript">
-
-  </script>
+<!-- Bootstrap 4.6 JS（包含 jQuery & Popper） -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
