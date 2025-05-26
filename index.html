@@ -19,8 +19,8 @@
   }
 
   .carousel-item img {
-    width: 100%;          
-    height: auto;         
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
   }
@@ -28,6 +28,22 @@
   .carousel-inner {
     width: 100%;
   }
+  .carousel-caption {
+  top: 20%;
+  transform: translateY(-20%);
+  bottom: auto;
+  text-align: center;
+}
+
+.carousel-caption h5 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+}
+
   </style>
 </head>
 <body style="overflow-x: hidden;">
@@ -86,7 +102,7 @@
         interval: 3000,
         ride: 'carousel'
       });
-    }, 100); 
+    }, 100);
   });
 </script>
 
