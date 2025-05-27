@@ -20,27 +20,15 @@
   height: 100vh;
 }
 
-.carousel-wrapper {
-  flex: 1;
-  height: 100dvh;
-  display: flex;
-  flex-direction: column;
-}
+    .carousel-wrapper {
+      flex: 0 0 calc(100vh - 7vh);
+      max-height: calc(100vh - 7vh);
+      overflow: hidden;
+    }
 
-.carousel-wrapper .carousel-inner {
-  flex: 1 1 auto;
-  overflow: hidden;
-}
-
-.info-bar {
-  height: 60px;
-  background-color: #000;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-}
-
+    .info-bar {
+      flex: 0 0 7vh;
+    }
 
     .carousel-inner,
     .carousel-item,
@@ -172,7 +160,7 @@
             <a class="nav-link text-secondary" href="#">色系</a>
             <a class="nav-link text-secondary" href="contact.html">聯絡我們</a>
           </nav>
-          <div class="text-muted mt-3" style="font-weight: 500;">
+          <div class="text-muted mt-3 " style="font-weight: 500;">
             BOXING CLUB
           </div>
         </div>
