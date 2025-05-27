@@ -201,6 +201,7 @@
           <div class="col-sm-6 col-md-4 mb-4">
             <div class="card h-100 border-0 card-hover">
               <div class="position-relative">
+                <img src="img/001.png" class="card-img-top" alt="圖片">
 
                 <!-- 遮罩 -->
                 <div class="hover-overlay">
@@ -208,16 +209,12 @@
                   <div class="tags">扁平化　極簡　白　童趣　紅　綠</div>
                   <div class="icon-group">
                     <a href="#" class="icon-btn"><i class="fas fa-link"></i></a>
-
-                    <!-- modal -->
                     <a href="#" class="icon-btn view-image" data-toggle="modal" data-target="#imageModal">
                       <i class="fas fa-search-plus"></i>
                     </a>
                   </div>
                 </div>
-
               </div>
-
               <div class="card-body px-0">
                 <h6 class="font-weight-bold mb-1">021</h6>
                 <p class="text-muted small">首頁廣告輪播圖片尺寸依設計為主 導覽列/網頁字型...</p>
@@ -311,7 +308,20 @@
           </div>
         </div>
       </main>
-
+      <!-- Modal -->
+      <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content bg-dark">
+            <div class="modal-body p-0 position-relative">
+              <button type="button" class="close text-white position-absolute" data-dismiss="modal" aria-label="Close"
+                style="top: 15px; right: 15px; font-size: 1.8rem; background: #fff; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
+                <span aria-hidden="true" style="color: #333;">&times;</span>
+              </button>
+              <img src="" class="w-100" id="modalImage" alt="放大圖片">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
