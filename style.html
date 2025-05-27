@@ -50,7 +50,6 @@
       width: 100%;
       height: 100%;
       background-color: rgba(128, 0, 128, 0.7);
-      /* 紫色透明遮罩 */
       color: white;
       display: flex;
       flex-direction: column;
@@ -101,9 +100,20 @@
 
     @media (max-width: 991.98px) {
       .scroll-buttons {
-        flex-wrap: nowrap !important;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 0.5rem;
+        font-size: 0.8rem;
+      }
+
+      .scroll-buttons .btn {
+        padding: 0.25rem 0.6rem;
+      }
+
+      .pb-3.mb-5.bg-light.text-center.text-lg-left.d-block.d-lg-flex {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
       }
     }
   </style>
