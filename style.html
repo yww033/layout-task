@@ -31,71 +31,73 @@
     .btn-purple {
       color: purple !important;
     }
+
     .card-hover {
-  position: relative;
-  overflow: hidden;
-}
+      position: relative;
+      overflow: hidden;
+    }
 
-.card-hover img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+    .card-hover img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-.card-hover .hover-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(128, 0, 128, 0.7); /* 紫色透明遮罩 */
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  padding: 1rem;
-}
+    .card-hover .hover-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(128, 0, 128, 0.7);
+      /* 紫色透明遮罩 */
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      padding: 1rem;
+    }
 
-.card-hover:hover .hover-overlay {
-  opacity: 1;
-}
+    .card-hover:hover .hover-overlay {
+      opacity: 1;
+    }
 
-.hover-overlay h5 {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
+    .hover-overlay h5 {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
 
-.hover-overlay .tags {
-  font-size: 0.875rem;
-  margin-bottom: 1rem;
-}
+    .hover-overlay .tags {
+      font-size: 0.875rem;
+      margin-bottom: 1rem;
+    }
 
-.icon-group {
-  display: flex;
-  gap: 1rem;
-}
+    .icon-group {
+      display: flex;
+      gap: 1rem;
+    }
 
-.icon-btn {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: white;
-  color: purple;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  transition: background 0.3s;
-}
+    .icon-btn {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: white;
+      color: purple;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
 
-.icon-btn:hover {
-  background: #eee;
-  text-decoration: none;
-}
+    .icon-btn:hover {
+      background: #eee;
+      text-decoration: none;
+    }
 
     @media (max-width: 991.98px) {
       .scroll-buttons {
@@ -154,7 +156,8 @@
 
       <main class="col-12 col-lg-10 px-4 py-4">
         <!-- 標題與麵包屑 -->
-        <div class="pb-3 mb-5 bg-light text-center text-lg-left d-block d-lg-flex justify-content-lg-between align-items-lg-center">
+        <div
+          class="pb-3 mb-5 bg-light text-center text-lg-left d-block d-lg-flex justify-content-lg-between align-items-lg-center">
           <h4 class="ml-3 mb-2 mb-lg-0 font-weight-bold">風格</h4>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-transparent justify-content-center justify-content-lg-end mb-0">
@@ -197,17 +200,20 @@
         </div>
 
         <!-- 卡片區域 -->
-
         <div class="row">
           <div class="col-sm-6 col-md-4 mb-4">
-            <div class="card h-100 border-0">
-              <img src="img/001.png" class="card-img-top" alt="圖片">
-              <div class="hover-overlay">
-                <h5 class="text-white font-weight-bold">021</h5>
-                <div class="text-white my-2 small">扁平化　極簡　白　童趣　紅　綠</div>
-                <div class="icon-group">
-                  <a href="#" class="icon-btn mr-3"><i class="fas fa-link"></i></a>
-                  <a href="#" class="icon-btn"><i class="fas fa-search-plus"></i></a>
+            <div class="card h-100 border-0 card-hover">
+              <div class="position-relative">
+                <img src="img/001.png" class="card-img-top" alt="圖片">
+
+                <!-- 遮罩 -->
+                <div class="hover-overlay">
+                  <h5>021</h5>
+                  <div class="tags">扁平化　極簡　白　童趣　紅　綠</div>
+                  <div class="icon-group">
+                    <a href="#" class="icon-btn"><i class="fas fa-link"></i></a>
+                    <a href="#" class="icon-btn"><i class="fas fa-search-plus"></i></a>
+                  </div>
                 </div>
               </div>
 
@@ -217,6 +223,7 @@
               </div>
             </div>
           </div>
+
 
           <div class="col-sm-6 col-md-4 mb-4">
             <div class="card h-100 border-0">
