@@ -99,16 +99,30 @@
     }
 
     @media (max-width: 991.98px) {
-      .scroll-buttons {
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        gap: 0.5rem;
-        font-size: 0.8rem;
-      }
+      .breadcrumb-title-wrapper {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      align-items: center !important;
+    }
 
-      .scroll-buttons .btn {
-        padding: 0.25rem 0.6rem;
-      }
+    .breadcrumb-title-wrapper h4 {
+      margin-bottom: 0 !important;
+    }
+
+    .breadcrumb-title-wrapper nav {
+      margin-top: 0 !important;
+    }
+      .scroll-buttons {
+      flex-wrap: nowrap !important;
+      overflow-x: hidden !important;
+      justify-content: space-between !important;
+    }
+
+    .scroll-buttons .btn {
+      font-size: 0.75rem !important;
+      padding: 0.2rem 0.5rem !important;
+      white-space: nowrap;
+    }
 
       .pb-3.mb-5.bg-light.text-center.text-lg-left.d-block.d-lg-flex {
         display: flex !important;
@@ -169,7 +183,7 @@
       <main class="col-12 col-lg-10 px-4 py-4">
         <!-- 標題與麵包屑 -->
         <div
-          class="pb-3 mb-5 bg-light text-center text-lg-left d-block d-lg-flex justify-content-lg-between align-items-lg-center">
+          class="pb-3 mb-5 bg-light text-center text-lg-left d-block d-lg-flex justify-content-lg-between align-items-lg-center breadcrumb-title-wrapper">
           <h4 class="ml-3 mb-2 mb-lg-0 font-weight-bold">風格</h4>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-transparent justify-content-center justify-content-lg-end mb-0">
