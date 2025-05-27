@@ -7,6 +7,7 @@
   <title>酷码资讯 ｜ 风格</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 
   <style>
     a.nav-link {
@@ -251,7 +252,7 @@
           </div>
 
 
-          <div class="col-sm-6 col-md-4 mb-4">
+          <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up">
             <div class="card h-100 border-0">
               <img src="img/002.png" class="card-img-top" alt="圖片">
               <div class="card-body px-0">
@@ -261,7 +262,7 @@
             </div>
           </div>
 
-          <div class="col-sm-6 col-md-4 mb-4">
+          <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up">
             <div class="card h-100 border-0">
               <img src="img/003.png" class="card-img-top" alt="圖片">
               <div class="card-body px-0">
@@ -273,7 +274,7 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-6 col-md-4 mb-4">
+          <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up">
             <div class="card h-100 border-0">
               <img src="img/004.png" class="card-img-top" alt="圖片">
               <div class="card-body px-0">
@@ -283,7 +284,7 @@
             </div>
           </div>
 
-          <div class="col-sm-6 col-md-4 mb-4">
+          <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up">
             <div class="card h-100 border-0">
               <img src="img/005.png" class="card-img-top" alt="圖片">
               <div class="card-body px-0">
@@ -293,7 +294,7 @@
             </div>
           </div>
 
-          <div class="col-sm-6 col-md-4 mb-4">
+          <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up">
             <div class="card h-100 border-0">
               <img src="img/006.png" class="card-img-top" alt="圖片">
               <div class="card-body px-0">
@@ -305,7 +306,7 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-6 col-md-4 mb-4">
+          <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up">
             <div class="card h-100 border-0">
               <img src="img/007.png" class="card-img-top" alt="圖片">
               <div class="card-body px-0">
@@ -315,7 +316,7 @@
             </div>
           </div>
 
-          <div class="col-sm-6 col-md-4 mb-4">
+          <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up">
             <div class="card h-100 border-0">
               <img src="img/008.png" class="card-img-top" alt="圖片">
               <div class="card-body px-0">
@@ -325,7 +326,7 @@
             </div>
           </div>
 
-          <div class="col-sm-6 col-md-4 mb-4">
+          <div class="col-sm-6 col-md-4 mb-4" data-aos="fade-up">
             <div class="card h-100 border-0">
               <img src="img/009.png" class="card-img-top" alt="圖片">
               <div class="card-body px-0">
@@ -356,18 +357,20 @@
   <!-- Bootstrap 4.6 JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     $(document).ready(function () {
       $('.view-image').on('click', function (e) {
         e.preventDefault();
-
-
         var imgSrc = $(this).closest('.card-hover').find('.card-img-top').attr('src');
-
-
         $('#modalImage').attr('src', imgSrc);
       });
     });
+
+    AOS.init({
+    duration: 800,
+    once: true
+  });
   </script>
 
 
