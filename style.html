@@ -153,6 +153,22 @@
           </div>
         </div>
       </header>
+      <!-- 圖片 Modal -->
+      <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content bg-dark">
+            <div class="modal-body p-0 position-relative">
+              <button type="button" class="close text-white position-absolute" data-dismiss="modal" aria-label="Close"
+                style="top: 15px; right: 15px; font-size: 1.8rem; background: #fff; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
+                <span aria-hidden="true" style="color: #333;">&times;</span>
+              </button>
+
+              <!-- 圖片展示 -->
+              <img src="img/001.png" class="w-100" id="modalImage" alt="大圖展示">
+            </div>
+          </div>
+        </div>
+      </div>
 
       <main class="col-12 col-lg-10 px-4 py-4">
         <!-- 標題與麵包屑 -->
@@ -199,7 +215,10 @@
           <div class="col-sm-6 col-md-4 mb-4">
             <div class="card h-100 border-0 card-hover">
               <div class="position-relative">
-                <img src="img/001.png" class="card-img-top" alt="圖片">
+                <a href="#" data-toggle="modal" data-target="#imageModal">
+                  <img src="img/001.png" class="card-img-top" alt="圖片">
+                </a>
+
 
                 <!-- 遮罩 -->
                 <div class="hover-overlay">
@@ -313,8 +332,15 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-
+    $(document).ready(function () {
+      $('.card-img-top').on('click', function (e) {
+        e.preventDefault();
+        var src = $(this).attr('src');
+        $('#modalImage').attr('src', src);
+      });
+    });
   </script>
+
 </body>
 
 </html>
