@@ -50,6 +50,11 @@
 
     .carousel-inner img {
       filter: grayscale(100%);
+      transition: filter 0.5s ease;
+    }
+
+    .carousel-item:hover img {
+      filter: grayscale(0%);
     }
 
     .carousel-caption {
