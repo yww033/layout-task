@@ -29,7 +29,7 @@
     }
 
     .info-bar {
-      flex: 0 0 10vh;
+      flex: 0 0 7vh;
     }
 
     .carousel-inner,
@@ -95,28 +95,16 @@
     }
 
     @media (max-width: 991.98px) {
-      .right-pane {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-
       .carousel-wrapper {
         flex: 1 1 auto;
-        max-height: 100%;
         height: calc(100vh - 60px);
-        /* 預留 info-bar 高度 */
+        max-height: calc(100vh - 60px);
       }
 
       .info-bar {
-        flex: 0 0 60px;
-        height: 60px;
-      }
-
-      .carousel-inner,
-      .carousel-item,
-      .carousel-item img {
-        height: 100%;
+        height: 60px !important;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
       }
 
       .carousel-caption h5 {
