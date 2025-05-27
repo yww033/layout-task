@@ -70,11 +70,18 @@
 
     .carousel-indicators {
       position: absolute;
-      bottom: 10px;
+      bottom: 70px;
       left: 50%;
       transform: translateX(-50%);
-      z-index: 20;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      padding-left: 0;
+      margin-right: 15%;
+      margin-left: 15%;
+      list-style: none;
     }
+
 
     .carousel-indicators li {
       width: 12px;
@@ -86,7 +93,6 @@
     }
 
     .carousel-indicators .active {
-      background-color: #fff;
       transform: scale(1.5);
     }
 
