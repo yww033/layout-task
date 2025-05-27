@@ -20,15 +20,27 @@
   height: 100vh;
 }
 
-    .carousel-wrapper {
-      flex: 0 0 calc(100vh - 7vh);
-      max-height: calc(100vh - 7vh);
-      overflow: hidden;
-    }
+.carousel-wrapper {
+  flex: 1;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
 
-    .info-bar {
-      flex: 0 0 7vh;
-    }
+.carousel-wrapper .carousel-inner {
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.info-bar {
+  height: 60px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
 
     .carousel-inner,
     .carousel-item,
