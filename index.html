@@ -93,6 +93,44 @@
       font-size: 1.5rem;
       font-weight: 500;
     }
+
+    @media (max-width: 991.98px) {
+      .right-pane {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .carousel-wrapper {
+        flex: 1 1 auto;
+        max-height: 100%;
+        height: calc(100vh - 60px);
+        /* 預留 info-bar 高度 */
+      }
+
+      .info-bar {
+        flex: 0 0 60px;
+        height: 60px;
+      }
+
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item img {
+        height: 100%;
+      }
+
+      .carousel-caption h5 {
+        font-size: 1.6rem;
+      }
+
+      .carousel-caption p {
+        font-size: 1.2rem;
+      }
+
+      .centered-caption h5 {
+        font-size: 1.2rem;
+      }
+    }
   </style>
 </head>
 
