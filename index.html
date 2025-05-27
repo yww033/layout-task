@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>酷碼資訊</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
   <style>
-    html, body {
+    html,
+    body {
       overflow: hidden;
       width: 100vw;
       height: 100vh;
@@ -21,13 +23,19 @@
     }
 
     .carousel-wrapper {
-      flex: 1 1 auto;
-      min-height: 0;
-      position: relative;
+      flex: 0 0 calc(100vh - 10vh);
+      max-height: calc(100vh - 10vh);
+      overflow: hidden;
     }
 
     .info-bar {
       flex: 0 0 10vh;
+    }
+
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item img {
+      height: 100%;
     }
 
     .carousel-item {
@@ -87,6 +95,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <section class="container-fluid p-0">
@@ -116,12 +125,13 @@
         </div>
 
         <!-- 桌機版 -->
-        <div class="d-none d-lg-flex flex-column align-items-center py-4" style="min-height: 100vh; background-color: #fff;">
+        <div class="d-none d-lg-flex flex-column align-items-center py-4"
+          style="min-height: 100vh; background-color: #fff;">
           <div class="mb-3" style="margin-top: 40px;">
             <img src="img/index/logo.png" alt="Logo" class="img-fluid" style="max-height: 200px;">
           </div>
           <nav class="nav flex-column text-center my-auto">
-            <a class="nav-link font-weight-bold"  style="color: purple;">首頁</a>
+            <a class="nav-link font-weight-bold" style="color: purple;">首頁</a>
             <a class="nav-link text-secondary" href="style.html">風格</a>
             <a class="nav-link text-secondary" href="#">色系</a>
             <a class="nav-link text-secondary" href="contact.html">聯絡我們</a>
@@ -192,4 +202,5 @@
     });
   </script>
 </body>
+
 </html>
