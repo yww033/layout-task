@@ -111,6 +111,25 @@
       font-weight: 500;
     }
 
+    @keyframes slideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(50%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .carousel-caption,
+    .centered-caption {
+      animation: slideUp 1s ease-out forwards;
+      animation-delay: 0.5s;
+      opacity: 0;
+    }
+
     @media (max-width: 991.98px) {
       .carousel-wrapper {
         flex: 1 1 auto;
